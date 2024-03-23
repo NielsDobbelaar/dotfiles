@@ -2,7 +2,7 @@
 
 <br />
 <div align="center">
-  <h1 align="center">NVIM setup with Packer</h1>
+  <h1 align="center">My personal dotfiles config</h1>
 </div>
 
 ## About
