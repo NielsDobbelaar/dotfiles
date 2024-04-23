@@ -15,16 +15,17 @@ return require("packer").startup(function(use)
 	})
 
 	-- multiple options for colorschemes
-	use({ "rose-pine/neovim" })
-	use({ "joshdick/onedark.vim" })
+	-- use({ "ellisonleao/gruvbox.nvim" })
+	-- use({'navarasu/onedark.nvim'})
 
 	use({
-		"ellisonleao/gruvbox.nvim",
-		as = "gruvbox",
-		config = function()
-			vim.cmd("colorscheme gruvbox")
-		end,
+		"navarasu/onedark.nvim",
 	})
+
+	require("onedark").setup({
+		style = "darker",
+	})
+	require("onedark").load()
 
 	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 
